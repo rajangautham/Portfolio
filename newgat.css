@@ -1,0 +1,133 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+header {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    padding: 4em 0;
+    text-align: center;
+    position: relative;
+}
+
+.profile-pic-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 350px;
+    height: 450px;
+    border-radius: 5%;
+    border: 5px solid #000000;
+    transition: transform 0.3s ease;
+}
+
+
+.header-content h1 {
+    margin-top: 0;
+    font-size: 2.5em;
+}
+
+.header-content p {
+    font-size: 1.2em;
+}
+
+nav {
+    background: #333;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #76c7c0;
+}
+
+.section {
+    padding: 2em;
+    margin: 1em auto;
+    background: #1f1f1f;
+    border-radius: 8px;
+    max-width: 900px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-10px);
+}
+
+.section h2 {
+    color: #76c7c0;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skills-category {
+    flex: 1;
+    margin-right: 2em;
+}
+
+.skills-category:last-child {
+    margin-right: 0;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    margin-bottom: 0.5em;
+    display: flex;
+    align-items: center;
+}
+
+.skills-list li img {
+    width: 20px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 8px
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    margin-top: 2em;
+    font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+    .skills-category {
+        flex: 0 0 100%;
+        margin-right: 0;
+        margin-bottom: 2em;
+    }
+}
